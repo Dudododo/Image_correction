@@ -66,6 +66,7 @@ int main()
 		cv::Point2f(0,height - 1),
 		cv::Point2f(width - 1,height - 1)
 	};
+
 	//计算仿射矩阵
 	cv::Mat perspective_matrix = cv::getPerspectiveTransform(pts1, pts2);
 
